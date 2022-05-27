@@ -7,6 +7,11 @@ function checkData()
         principal.focus(principal);
         return false;
     }
+    if(isNaN(principal)){
+        alert('Enter a positive Number')
+        principal.focus(principal);
+        return false;
+    }
     return true;
 }
 function compute()
